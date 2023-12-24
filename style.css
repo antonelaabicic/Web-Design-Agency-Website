@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+/*odnosi se samo na slike*/
+.tile-image{
+  height: 200px; /*slika je velika 200px*/
+  float: left; /*poravnata je ulijevo od kontejenra*/
+  margin-right: 50px; /*D stavi razmak da tekst i slika nisu sljubljeni*/
+}
+
+.card{
+  width: 43%;
+}
+/*veličina h2 i p je 43% kontejnera - tekst neće biti preko cijelog blok elementa*/
+/*div je također 43% blok elementa*/
+
+/*odnosi se na položaj od div*/
+.left{
+  float: left;
+}
+
+/*odnosi se na položaj od div*/
+.right{
+  float: right;
+}
+
+@media (max-width: 680px){
+  .logo{
+    width: 100px
+  }
+
+  h1{
+    font-size: 3.5 rem;
+    text-align: center;
+  }
+
+  .card{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+  /*odnosi se na img djecu od roditelja klase .card*/
+  /*object-fit - specifies how an <img> or <video> should be resized to fit its container. It's commonly used to make sure the entire container is covered by the content*/
+}
